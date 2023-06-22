@@ -63,7 +63,6 @@ for tarea in tareas:
     tareas_ordenadas.append(tarea[1])
 #print(tareas_ordenadas)
 
-
 print("==> Tareas Ordenadas <==")
 for tareas in tareas_ordenadas:
     print(tareas)
