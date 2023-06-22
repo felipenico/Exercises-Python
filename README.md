@@ -6,13 +6,17 @@
 
 La mayoria de estos ejercicios provienen de Cursos en Udemy, asi como tambien de Videos de Youtube.
 
-Uno de estos cursos es el siguiente ---> [Aquí](https://www.udemy.com/course/python-3-al-completo-desde-cero/).
+Python de cero a Todoterreno ---> [Aquí](https://www.udemy.com/course/python-3-al-completo-desde-cero/).
 
 > Basic, intermediate and Advance
 
-Uno de los cursos con Mayor Numero de Ejercicios --> [Aqui](https://www.udemy.com/course/python-programming-unittest-exercises/)
+Mas de +350 Ejercicios desde lo basico a lo avanzado --> [Aqui](https://www.udemy.com/course/python-programming-unittest-exercises/)
 
 > Zero,Basic, Intermediate and Advance
+
+Master Python programming by solving scientific projects --> [Aqui](https://www.udemy.com/course/python-scientific-x/)
+
+>Data visualization, Modeling, Spectral analysis
 
 ---
 
@@ -23,4 +27,4 @@ Uno de los cursos con Mayor Numero de Ejercicios --> [Aqui](https://www.udemy.co
 
 ![GitHub Followers](https://img.shields.io/github/followers/felipenico?style=social)
 
-Soy ingeniero biomedico llevo un 1 año recien egresado. Desde hace 4 años estudio programacion desde el lenguaje C++ y Matlab.Desde hace 1 año y medio vengo estudiante Python y Java.
+Soy Ingeniero Biomedico llevo un 1 año recien egresado. Desde hace 4 años estudio programacion desde el lenguaje C++ y Matlab.Desde hace 1 año y medio vengo estudiante Python y Java.
