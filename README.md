@@ -12,11 +12,11 @@ Python de cero a Todoterreno ---> [Aquí](https://www.udemy.com/course/python-3-
 
 Mas de +350 Ejercicios desde lo basico a lo avanzado --> [Aqui](https://www.udemy.com/course/python-programming-unittest-exercises/)
 
-> Zero,Basic, Intermediate and Advance
+> Zero,Basic, Intermediate and Advanced
 
 Master Python programming by solving scientific projects --> [Aqui](https://www.udemy.com/course/python-scientific-x/)
 
->Data visualization, Modeling, Spectral analysis
+> Data visualization, Modeling, Spectral analysis
 
 ---
 
