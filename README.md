@@ -4,19 +4,7 @@
 
 ## Ejercicios para afianzar conocimientos en Python, estos ejercicios van de lo mas basico a lo mas avanzado
 
-La mayoria de estos ejercicios provienen de Cursos en Udemy, asi como tambien de Videos de Youtube.
-
-Python de cero a Todoterreno ---> [Aquí](https://www.udemy.com/course/python-3-al-completo-desde-cero/).
-
-> Basic, intermediate and Advance
-
-Mas de +350 Ejercicios desde lo basico a lo avanzado --> [Aqui](https://www.udemy.com/course/python-programming-unittest-exercises/)
-
-> Zero,Basic, Intermediate and Advanced
-
-Master Python programming by solving scientific projects --> [Aqui](https://www.udemy.com/course/python-scientific-x/)
-
-> Data visualization, Modeling, Spectral analysis
+Estos son ejercicios creados por mi, complementados por ejercicios encontrados por Internet, asi como tambien de plataformas como exercises.org, y de videos de la Plataforma Youtube, esto con el Objetivo de adquirir conocimiento practicando este lenguaje de programación.
 
 ---
 

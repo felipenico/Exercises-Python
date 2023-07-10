@@ -8,12 +8,6 @@
 #5. Dentro del segundo for ejecuta una instrucción ** print(" * ", end='')**, (end='' evita el salto de línea).
 #6. Ejecuta el código y observa el resultado.
 
-#Ahora intenta deducir dónde y cómo añadir otra instruccion print para dibujar una tabla.
-
-#Recordatorio: Los argumentos se envían como cadenas separadas por espacios, 
-#si quieres enviar varias palabras como un argumento deberás indicarlas entre comillas dobles "esto es un argumento". 
-#Para capturar los argumentos debes utilizar el módulo sys y su lista argv.
-
 import sys
 # print(sys.argv)
 if (len(sys.argv) == 3):
