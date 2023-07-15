@@ -44,7 +44,7 @@ class FiguraRoC:
     def areaRoC(self):
         self.base = abs(self.pF.X - self.pI.X)
         self.altura = abs(self.pF.Y - self.pI.Y)
-        print(f"La Base es de : {self.altura * self.base} u")
+        print(f"La Base es de : {self.altura * self.base} u^2")
 
 if __name__ == "__main__":
     pass
