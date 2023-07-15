@@ -1,6 +1,10 @@
 import spot
 PointList = []
 opciones = []
+def menu():
+    for i in range(limite):
+        print(f"{i}.{PointList[i]}")
+
 while(True):
     try:
         limite = int(input("Cuanto Puntos quiere generar?: "))
@@ -36,14 +40,12 @@ Su opcion:""",end = " ")
             print("\nError.... Dato NO valido!")
             continue
         elif(opcion == 1):
-            for i in range(limite):
-                print(f"{i}.{PointList[i]}")
+            menu()
             print("Su opcion?:",end = " ")
             o = int(input())
             PointList[o].queCuadrante()
             continue
-    for i in range(limite):
-        print(f"{i}.{PointList[i]}")
+    menu()
     for j in range(2):
         print("Su opcion?:",end = " ")
         opciones.append(int(input()))
@@ -54,5 +56,3 @@ Su opcion:""",end = " ")
         PointList[opciones[0]].distan(PointList[opciones[1]])
         opciones = []
         
-    
-
