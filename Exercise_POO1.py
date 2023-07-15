@@ -36,7 +36,7 @@ Su opcion:""",end = " ")
         if(opcion == 4):
             print("\n----------> Gracias por Utilizar el Programa <----------")
             break
-        elif(opcion > 4):
+        elif(opcion > 4 or opcion < 0):
             print("\nError.... Dato NO valido!")
             continue
         elif(opcion == 1):

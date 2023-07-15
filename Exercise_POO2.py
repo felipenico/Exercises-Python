@@ -25,15 +25,12 @@ Su opcion:""",end = " ")
         print("\nError.... Dato NO valido!")
         continue
     else:
-        if(opcion < 0):
+        if(opcion < 0 or opcion > 4):
             print("\nError.... Dato NO valido!")
             continue      
         if(opcion == 4):
             print("\n----------> Gracias por Utilizar el Programa <----------")
             break
-        elif(opcion > 4):
-            print("\nError.... Dato NO valido!")
-            continue
     menu()
     if(opcion == 2):
         RoC.alturaRoC()
