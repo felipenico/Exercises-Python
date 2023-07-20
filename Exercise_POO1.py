@@ -1,4 +1,5 @@
 import spot
+from math import *
 PointList = []
 opciones = []
 def menu():
@@ -42,8 +43,11 @@ Su opcion:""",end = " ")
         elif(opcion == 1):
             menu()
             print("Su opcion?:",end = " ")
-            o = int(input())
-            PointList[o].queCuadrante()
+            o = floor(int(input()))
+            if(o < len(PointList)):
+                PointList[o].queCuadrante()
+            else:
+                print("Numero Incorrecto...")
             continue
     menu()
     for j in range(2):
