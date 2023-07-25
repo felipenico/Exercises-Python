@@ -23,7 +23,7 @@ dec -> Digite dec para Decrementar el Contador
     elif(opcion == "dec"):
         i -= 1
     elif(opcion == "3"):
-        print("\n----------> Gracias por Utilizarinc el Programa <----------")
+        print("\n----------> Gracias por Utilizar el Programa <----------")
         break
     with open("contador.txt","w") as fichero:
         fichero.write(str(i))
