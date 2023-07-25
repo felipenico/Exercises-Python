@@ -44,4 +44,4 @@ def tratar(clista):
     return clista
 
 copy_list = tratar(copy_list)
-print( copy_list[0] == sum(copy_list[1:]) )
+print("\nLa suma de sus elementos da como resultado el primer elemento?:",copy_list[0] == sum(copy_list[1:]))
