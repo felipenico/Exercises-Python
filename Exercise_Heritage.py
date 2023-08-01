@@ -1,4 +1,4 @@
-import motors
+import POO.motors
 listaVehiculos = []
 #ruedas,cilindrada,velocidad,carga,color,tipo = 0,0,0,0,"",""
 def pedir():
@@ -38,7 +38,7 @@ Su opcion?: """,end = "")
                 continue
             else:
                 break
-        listaVehiculos.append(motors.Coche(color,ruedas,velocidad,cilindrada))
+        listaVehiculos.append(POO.motors.Coche(color,ruedas,velocidad,cilindrada))
     elif(opcion == 2):
         while True:
             try:
@@ -49,7 +49,7 @@ Su opcion?: """,end = "")
                 continue
             else:
                 break
-        listaVehiculos.append(motors.Camioneta(color,ruedas,velocidad,cilindrada,carga))
+        listaVehiculos.append(POO.motors.Camioneta(color,ruedas,velocidad,cilindrada,carga))
     elif(opcion == 3):
         
         while True:
@@ -62,7 +62,7 @@ Su opcion?: """,end = "")
                 continue
             else:
                 break
-        listaVehiculos.append(motors.Bicicleta(color,ruedas,tipo))
+        listaVehiculos.append(POO.motors.Bicicleta(color,ruedas,tipo))
     elif(opcion == 4):
         while True:
             try:
@@ -73,7 +73,7 @@ Su opcion?: """,end = "")
                 continue
             else:
                 break
-        listaVehiculos.append(motors.Motocicleta(color,ruedas,velocidad,cilindrada,tipo))
+        listaVehiculos.append(POO.motors.Motocicleta(color,ruedas,velocidad,cilindrada,tipo))
     elif(opcion == 5):
         print("\n Se pueden consultar los vehiculos segun el numero de Ruedas,por favor digite 2 o 4")
         try:
@@ -82,5 +82,5 @@ Su opcion?: """,end = "")
             print("\nError.... Dato NO valido!")
             continue
         else:
-            motors.catalogo(listaVehiculos,ruedas)
+            POO.motors.catalogo(listaVehiculos,ruedas)
 

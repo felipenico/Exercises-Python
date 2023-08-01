@@ -5,7 +5,7 @@ try :
     with open("contador.txt","r") as fichero:
         i = int(fichero.read())
         print(i)
-except FileNotFoundError:#Exception as iden
+except FileNotFoundError:#Exception as iden:
     #print(type(iden).__name__)
     with open("contador.txt","w") as fichero:
         print("hola")

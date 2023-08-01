@@ -1,17 +1,17 @@
 #Programa que lee dos Puntos y halla la base, la altura y el area de un Rectangulo o Cuadrado.
-import spot
+import POO.spot
 PointList = []
 limite = 2
 
 def menu():
     for i in range(limite):
-        print(f"{i}.{PointList[i]}\n")
+        print(f"{i}.{PointList[i]}")
 
 for n in range(limite):
     x = float(input(f"Digite la coordenada X del Punto {n + 1}: "))
     y = float(input(f"Digite la coordenada Y del Punto {n + 1}: "))
-    PointList.append(spot.PuntoCartesiano(x,y)) 
-RoC = spot.FiguraRoC(PointList[0],PointList[1])
+    PointList.append(POO.spot.PuntoCartesiano(x,y)) 
+RoC = POO.spot.FiguraRoC(PointList[0],PointList[1])
 
 while True:
     print("""\n1.Si quiere saber la Base?

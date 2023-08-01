@@ -53,10 +53,10 @@ def catalogo(vehiculos,ruedas = None):
     for p in vehiculos:
         if(p.ruedas != 2 and p.ruedas != 0 and p.ruedas != 4):
             print(f"No se ha encontrado ningun vehiculo con {ruedas}")
-        elif(p.ruedas == ruedas):
+        elif(p.ruedas == ruedas):#2
             imprimir(p)
             n2 += 1
-        elif(p.ruedas == ruedas):   
+        elif(p.ruedas == ruedas):#4 
             imprimir(p)
             n4 += 1
         #elif(ruedas == None):
