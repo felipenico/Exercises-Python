@@ -73,7 +73,7 @@ Su opcion?: """,end = "")
                 continue
             else:
                 break
-        listaVehiculos.append(POO.motors.Motocicleta(color,ruedas,velocidad,cilindrada,tipo))
+        listaVehiculos.append(POO.motors.Motocicleta(color,ruedas,tipo,velocidad,cilindrada))
     elif(opcion == 5):
         print("\n Se pueden consultar los vehiculos segun el numero de Ruedas,por favor digite 2 o 4")
         try:

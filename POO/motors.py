@@ -44,25 +44,20 @@ class Motocicleta(Bicicleta):
         return super().__str__() + "Velocidad: {}km/h\nCilindrada: {}cc\n".format(self.velocidad,self.cilindrada)
 
 def catalogo(vehiculos,ruedas = None):
-    n2 = 0
-    n4 = 0
+    n = 0
     def imprimir(p):
         print("\n"+type(p).__name__)
         print(p)
-
+    if (ruedas == None):
+        for i in vehiculos:
+            imprimir(i)
+    elif(ruedas != 2 and ruedas != 4):
+        print(f"No se ha encontrado ningun vehiculo con {ruedas}")
+        return
     for p in vehiculos:
-        if(p.ruedas != 2 and p.ruedas != 0 and p.ruedas != 4):
-            print(f"No se ha encontrado ningun vehiculo con {ruedas}")
-        elif(p.ruedas == ruedas):#2
+        if(p.ruedas == ruedas):#2
             imprimir(p)
-            n2 += 1
-        elif(p.ruedas == ruedas):#4 
-            imprimir(p)
-            n4 += 1
+            n += 1
         #elif(ruedas == None):
          #   imprimir(p)
-    if (ruedas == 2):
-        print(f"Se han encontrado {n2} vehículo(s) con {ruedas} ruedas:")
-    if (ruedas == 4):
-        print(f"Se han encontrado {n4} vehículo(s) con {ruedas} ruedas:")
-
+    print(f"Se han encontrado {n} vehículo(s) con {ruedas} ruedas")

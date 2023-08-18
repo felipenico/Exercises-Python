@@ -8,7 +8,7 @@ class Personaje:
             self.Personaje = {"nombre":nombre,"vida":trunc(vida),"ataque":trunc(ataque),"defensa":trunc(defensa),"alcance":trunc(alcance)}
             print("Se creo al Personaje: "+ nombre)
         else:
-            print("Digita los valores correctamente")
+            print("Datos Invalidos....")
             return
     
     def __str__(self):

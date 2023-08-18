@@ -20,7 +20,7 @@ while(True):
 
 for n in range(limite):
     x = float(input(f"Digite la coordenada X del Punto {n}: "))
-    y = float(input(f"Digite la coordenada Y del Punto {n}: "))
+    y = float(input(f"Digite la coordenada Y del Punto {n}: "))    
     PointList.append(PuntoCartesiano(x,y)) 
 while True:
     print("""\n1. Si quiere saber el Cuadrante de una Coordenada?
