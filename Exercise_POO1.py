@@ -10,7 +10,7 @@ while(True):
     try:
         limite = int(input("Cuanto Puntos quiere generar?: "))
     except:
-        print("\nDato no valido.. Escriba un numero mayor a cero")
+        print("\nDato no valido.. Escriba un numero")
     else:
         if(limite > 0):
             print("\nGracias por escribir su numero")
