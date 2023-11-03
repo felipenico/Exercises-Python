@@ -11,7 +11,7 @@ def New():
     mensaje.set("New file")
     ruta = ""
     texto.delete(1.0,"end")#El metodo interno .delete() del widget Text() permite eliminar el texto escrito
-    #en el campo de texto, como primer argumento indicamos 1.0 significa que empieza a borrar desde el principio
+    #en el campo de texto editable, como primer argumento indicamos 1.0 significa que empieza a borrar desde el principio
     # y como segundo argumento la palabra "end" que borre hasta el final de todo.
     #Dentro de un Text() el primer caracter siempre es un salto de linea(\n), es por ello que colocamos 1.0
     #para eliminar este salto.
@@ -39,8 +39,35 @@ def Open():
         root.title(ruta + " - IDE")
 def save():
     mensaje.set("Save file")
+    #fichero existe 
+    if ruta !=  "" :
+        contenido = texto.get(1.0,"end-1c")
+        #El metodo interno .get() permite obtener el texto escrito, como primer argumento indicamos
+        #1.0 para que comienze desde el inicio  y como segundo argumento "end" y que vaya al final del todo
+        #La expresion regular -1c permite eliminar un salto de linea que se encuentra al final del texto 
+        #o cadena del marco de texto Text()
+        with open(ruta,'w+') as fichero:
+            fichero.write(contenido)
+        mensaje.set("Save Succesful")
+    else:#Fichero No existe  
+        save_as()
+
+    
 def save_as():
+    global ruta
     mensaje.set("Save as file")
+    fichero = FileDialog.asksaveasfile(title="Save file",mode='w',defaultextension=".txt")
+    if fichero is not None:
+        ruta = fichero.name#Almacena la ruta del fichero, el atributo de clase(name) almacena la ruta
+        contenido = texto.get(1.0,"end-1c")
+        with open(ruta,'w+') as fichero:
+            fichero.write(contenido)
+        mensaje.set("Save as Succesful")
+        texto.delete(1.0,"end")
+    else:
+        mensaje.set("Guardado cancelado")
+        ruta = ""
+
 root = Tk()
 root.title("IDE")   
 
