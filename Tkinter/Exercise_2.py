@@ -21,7 +21,6 @@ def guardar():
 
 def abrir():
     global ruta
-    resulVar.set("")
     ruta = FileDialog.askopenfilename(title="Abrir Fichero",filetypes=(("Fichero de texto",".txt"),))
     if ruta != "": 
         with open(ruta,"r") as admin:
@@ -49,10 +48,6 @@ filemenu.add_command(label="Save As",command = guardar)
 filemenu.add_command(label="Open file",command = abrir)
 
 menubar.add_cascade(label = "File",menu=filemenu)
-
-#label1 = Label(root,text = "Seleccione la operacion:")
-#label1.grid(row=0,column=0,sticky="w",padx=3,pady=1)
-#label1.config(bg = "blue",fg="#fff",font=("Console",12))
 
 Button(root,text = "Incrementar",command=incrementar).grid(row=2,column=0,padx=3,pady=3)
 Button(root,text = "Decrementar",command=decrementar).grid(row=2,column=1,padx=3,pady=3)
